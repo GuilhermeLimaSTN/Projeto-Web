@@ -28,7 +28,26 @@ header{
     padding: 40px 4%;
 }
 
-/* Posição do botão contato */
+/* Estilo botão contato*/
+.contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: rgb(217, 25, 255);
+    color: rgb(228, 228, 228);
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.contato button:hover{
+    color: rgb(255, 255, 255);
+    transform: scale(1.05);
+    transition: .2s;
+    box-shadow: 0px 0px 15px rgba(181, 20, 255, 0.808);
+}
+
+/* Posição de bot~es menu */
 header > .interface{
     display: flex;
     align-items: center;
@@ -36,7 +55,7 @@ header > .interface{
     gap: 120px;
 }
 
-/* Estilo do menu*/
+/* Estilo do menu */
 header .menu-desktop button{
     padding: 10px 25px;
     font-weight: 400;
@@ -62,30 +81,11 @@ header nav ul{
 /* Espaçamento do menu */
 header nav ul li{
     display: inline-block;
-    padding: 0 60px;
+    padding: 0px 60px;
 }
 
-/* Estilo botão contato */
-header .contato button{
-    padding: 10px 40px;
-    font-size: 18px;
-    font-weight: 500;
-    background-color: rgb(217, 25, 255);
-    color: rgb(228, 228, 228);
-    border: 0;
-    border-radius: 20px;
-    cursor: pointer;
-}
-
-header .contato button:hover{
-    color: rgb(255, 255, 255);
-    transform: scale(1.05);
-    transition: .2s;
-    box-shadow: 0px 0px 15px rgba(181, 20, 255, 0.808);
-}
 
 /* Topo do site*/
-
 section.topo-do-site{
     padding: 40px 4%;
 }
@@ -96,17 +96,54 @@ section.topo-do-site .flex{
     gap: 80px;
 }
 
+/* Titulo e paragrafo topo*/
 .topo-do-site h1{
     color: white;
     font-size: 35px;
+    
 }
 
-.topo-do-site h1 span{
+.topo-do-site .txt-topo-site h1 span{
     color: rgb(180, 20, 255);
-
+    
 }
 
-img{
-    width: 380px;
-    height: 380px;
+.topo-do-site .txt-topo-site p{
+    color: white;
+    font-size: 18px;
+    margin: 35px 8px;
+    
+}
+
+/* Config. de imagem topo*/
+.img-topo-site {
+    width: 430px;
+    height: 430px;
+    position: relative;
+}
+
+.background-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay-image{
+    position: absolute;
+    padding: 30px 0px;
+    margin: -45px 0px 0px ;
+    top: 20px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    animation: flutuar 2.5s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
 }
