@@ -171,9 +171,9 @@ section.conhecimentos .flex{
 
 .conhecimentos-box{
     color: white;
-    padding: 40px 70px;
+    padding: 25px 50px;
     border-radius: 10px;
-    border: 2px solid rgb(217, 25, 255);
+    border: 2px solid rgba(217, 25, 255, 0.637);
     margin-left: 20px;
     margin-top: 15px; 
 }
@@ -181,7 +181,7 @@ section.conhecimentos .flex{
 .conhecimentos-box:hover{
     transform: scale(1.05);
     transition: .2s;
-    box-shadow: 0px 0px 8px rgb(217, 25, 255);
+    box-shadow: 0px 0px 8px rgba(217, 25, 255, 0.541);
 }
 
 .conhecimentos-box i{
