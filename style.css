@@ -26,6 +26,7 @@ body{
 /* Margem de cima do menu */
 header{
     padding: 40px 4%;
+    background-image: linear-gradient(#b514ff23, transparent );
 }
 
 /* Estilo botão contato*/
@@ -115,7 +116,7 @@ section.topo-do-site .flex{
 }
 
 .topo-do-site .txt-topo-site h1 span{
-    color: rgb(180, 20, 255);
+    color: #b414ff;
     
 }
 
